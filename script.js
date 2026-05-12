@@ -46,3 +46,28 @@ function toggleMode() {
 }
 // Attach function to the actual button
 toggleBtn.addEventListener("click", toggleMode);
+
+
+// REVIEW
+// 1. Select an element to target (button)
+const hackerBtn = document.querySelector("#hacker");
+// 2. Attach a function to the button 
+hackerBtn.addEventListener("click", setHacker);
+// 3. Define what happens when triggered 
+function setHacker() {
+   body.style.background = "black";
+   body.style.fontFamily = "monospace";
+   description.style.color = "rgb(55, 255, 0)";
+   description.textContent = "YOU GOT HACKED :1";
+   image.src = "hacker.jpg";
+   
+}
+
+const sackedBtn = document.querySelector("#sacked");
+sackedBtn.addEventListener("click", setSacked);
+function setSacked() {
+   body.style.background = "gray";
+   description.style.color = "white";
+   description.textContent = "YOU GOT SACKED :(";
+   image.src = "sacked .jpg";
+}
