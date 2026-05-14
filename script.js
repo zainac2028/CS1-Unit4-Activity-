@@ -71,3 +71,12 @@ function setSacked() {
    description.textContent = "YOU GOT SACKED :(";
    image.src = "sacked .jpg";
 }
+
+
+const lorealbtn = document.querySelector("#loreal")
+lorealbtn.addEventListener("click", setLoreal)
+function setLoreal () {
+   body.style.background = "lightpink"
+   description.textContext = 
+   image.src = ""
+}
